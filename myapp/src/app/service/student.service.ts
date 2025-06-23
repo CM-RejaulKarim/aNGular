@@ -8,20 +8,20 @@ import { Student } from '../../model/student.model';
 })
 export class StudentService {
 
-baseurl: string="http://localhost:3000/students";
+  baseurl: string = "http://localhost:3000/students";
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-getAllStudent(): Observable<any>{
+  getAllStudent(): Observable<any> {
 
-return this.http.get(this.baseurl);
+    return this.http.get(this.baseurl);
 
 
-}
-saveStudent(student: Student):Observable<any>{
+  }
+  saveStudent(student: Student): Observable<any> {
 
-  return this.http.post(this.baseurl, student);
-}
+    return this.http.post(this.baseurl, student);
+  }
 
 
 }
