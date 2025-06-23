@@ -1,0 +1,5 @@
+(ng new myapp --a-) for new project open
+
+(npm install json-server)= for json server installation
+
+npm i = node module download and install.
