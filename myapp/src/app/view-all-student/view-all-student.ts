@@ -13,12 +13,12 @@ export class ViewAllStudent implements OnInit{
 constructor(private studentService:StudentService){}
 
   ngOnInit(): void {
-    this.loadAllStudent;
+    this.loadAllStudent();
   }
 
 loadAllStudent(){
 
-this.students = this.studentService.getAllStudent;
+this.students = this.studentService.getAllStudent();
 
 }
 

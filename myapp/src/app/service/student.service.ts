@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Student } from '../../model/student.model';
 
 @Injectable({
   providedIn: 'root'
@@ -11,13 +12,16 @@ baseurl: string="http://localhost:3000/students";
 
   constructor(private http:HttpClient) { }
 
-getAllStudent(){
+getAllStudent(): Observable<any>{
 
 return this.http.get(this.baseurl);
 
 
 }
+saveStudent(student: Student):Observable<any>{
 
+  return this.http.post(this.baseurl, student);
+}
 
 
 }

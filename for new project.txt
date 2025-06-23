@@ -3,3 +3,6 @@
 (npm install json-server)= for json server installation
 
 npm i = node module download and install.
+
+npx json-server db.json =  json server run
+json-server --watch db.json =  json server run
