@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { Home } from './home/home';
 import { ViewAllStudent } from './view-all-student/view-all-student';
 import { Addstudent } from './addstudent/addstudent';
+import { ViewAllLocations } from './view-all-locations/view-all-locations';
 
 const routes: Routes = [
 {path: '', component:Home},
 
 {path:'allstu', component:ViewAllStudent},
+{path:'allloc', component:ViewAllLocations},
 
 {path:'addstu', component:Addstudent}
   
