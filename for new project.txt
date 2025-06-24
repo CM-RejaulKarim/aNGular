@@ -10,3 +10,5 @@ json-server --watch db.json =  json server run
 ng g c addstudent= for create new folder/file
 
 ng g s service/location.service =for taking service
+
+npm install @angular/animations = for animation
