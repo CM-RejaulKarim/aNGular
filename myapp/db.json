@@ -8,15 +8,39 @@
     },
     {
       "id": "ee82",
-      "name": "Rakib",
+      "name": "Rakib Islam",
       "email": "rakib@gmail.com",
       "fee": 300000
     },
     {
       "id": "6506",
-      "name": "Sadiar",
+      "name": "Sadiar Rahman",
       "email": "sadiar@gmail.com",
       "fee": 35000
+    },
+    {
+      "id": "7ca3",
+      "name": "Rahmat ullah",
+      "email": "rahmat@gmail.com",
+      "fee": 30000
+    },
+    {
+      "id": "3c63",
+      "name": "Imran Mia",
+      "email": "imran@gmail.com",
+      "fee": 25000
+    },
+    {
+      "id": "fb20",
+      "name": "istiaq samim",
+      "email": "istiaq@gmail.com",
+      "fee": 40000
+    },
+    {
+      "id": "dd7c",
+      "name": "Md. masud",
+      "email": "masud@gmail.com",
+      "fee": 50000
     }
   ],
   "locations": [
@@ -116,6 +140,26 @@
       "city": "Portland",
       "state": "OR",
       "photo": "https://angular.dev/assets/images/tutorials/common/webaliser-_TPTXZd9mOo-unsplash.jpg",
+      "availableUnits": 6,
+      "wifi": true,
+      "laundry": true
+    },
+    {
+      "id": "10",
+      "name": "Cape Town",
+      "city": "Cape Town",
+      "state": "NZ",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Aerial_View_of_Sea_Point%2C_Cape_Town_South_Africa.jpg/1200px-Aerial_View_of_Sea_Point%2C_Cape_Town_South_Africa.jpg",
+      "availableUnits": 6,
+      "wifi": true,
+      "laundry": true
+    },
+    {
+      "id": "11",
+      "name": "house of a cliff",
+      "city": "Cape Town",
+      "state": "NZ",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5gRzOpp1UliL27YSUAieS56kHnCQwJj-7DQ&s",
       "availableUnits": 6,
       "wifi": true,
       "laundry": true
