@@ -1,4 +1,4 @@
-(ng new myapp --a-) for new project open
+(ng new myapp --no-standlaone) for new project open
 
 (npm install json-server)= for json server installation
 
