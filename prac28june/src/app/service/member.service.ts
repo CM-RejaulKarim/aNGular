@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,10 @@ import { Injectable } from '@angular/core';
 })
 export class MemberService {
 
-  constructor() { }
+  baseurl: string ="http://localhost:3000/member";
+
+  constructor(private http:HttpClient) { }
+
+  getAllMember(){}
+
 }

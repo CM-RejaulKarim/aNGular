@@ -5,15 +5,17 @@ import { ViewAllStudent } from './view-all-student/view-all-student';
 import { Addstudent } from './addstudent/addstudent';
 import { ViewAllLocations } from './view-all-locations/view-all-locations';
 import { UpdateStudent } from './update-student/update-student';
+import { Addlocation } from './addlocation/addlocation';
 
 const routes: Routes = [
 {path: '', component:Home},
 
 {path:'allstu', component:ViewAllStudent},
-{path:'allloc', component:ViewAllLocations},
-
 {path:'addstu', component:Addstudent},
-{path:'updateStudent/:id', component:UpdateStudent}
+{path:'updateStudent/:id', component:UpdateStudent},
+
+{path:'allloc', component:ViewAllLocations},
+{path:'addloc', component:Addlocation},
   
 ];
 

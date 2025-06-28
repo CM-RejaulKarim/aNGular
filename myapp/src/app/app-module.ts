@@ -10,6 +10,8 @@ import { Addstudent } from './addstudent/addstudent';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ViewAllLocations } from './view-all-locations/view-all-locations';
 import { UpdateStudent } from './update-student/update-student';
+import { Addlocation } from './addlocation/addlocation';
+import { UpdateLocation } from './update-location/update-location';
 
 
 @NgModule({
@@ -19,12 +21,14 @@ import { UpdateStudent } from './update-student/update-student';
     ViewAllStudent,
     Addstudent,
     ViewAllLocations,
-    UpdateStudent
+    UpdateStudent,
+    Addlocation,
+    UpdateLocation
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule, 
+    FormsModule,
     ReactiveFormsModule
   ],
   providers: [
