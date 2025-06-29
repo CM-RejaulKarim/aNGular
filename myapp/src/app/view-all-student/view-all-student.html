@@ -7,6 +7,7 @@
                 <th>Name</th>
                 <th>Email</th>
                 <th>Fee</th>
+                <th>City</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -15,7 +16,8 @@
                 <td>{{s.id}}</td>
                 <td>{{s.name}}</td>
                 <td>{{s.email}}</td>
-                <td>{{s.fee}}/-</td>
+                <td>{{s.fee|currency }}</td>
+                <td></td>
                 <td>
                     <button class="btn btn-primary m-1 p-1" (click)="getStudentById(s.id)">Edit</button>
                     <button class="btn btn-warning m-1 p-1" (click)="deleteStudent(s.id)">Delete</button>

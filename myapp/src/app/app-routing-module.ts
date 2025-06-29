@@ -3,9 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { Home } from './home/home';
 import { ViewAllStudent } from './view-all-student/view-all-student';
 import { Addstudent } from './addstudent/addstudent';
-import { ViewAllLocations } from './view-all-locations/view-all-locations';
+import { ViewAllLocations } from '../../location/view-all-locations/view-all-locations';
 import { UpdateStudent } from './update-student/update-student';
-import { Addlocation } from './addlocation/addlocation';
+import { Addlocation } from '../../location/addlocation/addlocation';
 
 const routes: Routes = [
 {path: '', component:Home},

@@ -15,7 +15,8 @@ export class Addstudent implements OnInit {
 
   formGroup !: FormGroup;
 
-  constructor(private studentService: StudentService,
+  constructor(
+    private studentService: StudentService,
     private formBuilder: FormBuilder,
     private router: Router
   ) { }

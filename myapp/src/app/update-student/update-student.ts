@@ -33,23 +33,20 @@ export class UpdateStudent implements OnInit {
       next: (res) => {
         this.student = res;
         this.cdr.markForCheck();
-
       },
       error: (err) => {
         console.error("Error fetching Student", err);
       }
-
     });
-
   }
+
   updateStudent(): void {
     this.studentService.updateStudent(this.id, this.student).subscribe({
 
       next: (res) => this.router.navigate(['/allstu']),
       error: (err) => console.error("Update failed", err)
-
     });
-
   }
+
   
 }
