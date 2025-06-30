@@ -2,6 +2,8 @@ import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { Student } from '../../model/student.model';
 import { StudentService } from '../service/student.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Location } from '../../model/location.model';
+import { LocationService } from '../service/location.service';
 
 @Component({
   selector: 'app-update-student',
@@ -11,19 +13,26 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class UpdateStudent implements OnInit {
 
-   id: string = '';
+  id: string = '';
   student: Student = new Student();
-
-  ngOnInit(): void {
-    this.loadStudentById();
-  }
+  locations: Location[] = [];
 
   constructor(
     private studentService: StudentService,
     private router: Router,
     private route: ActivatedRoute,
-    private cdr: ChangeDetectorRef
+    private cdr: ChangeDetectorRef,
+    private locationService: LocationService
   ) { }
+
+  ngOnInit(): void {
+    this.id = this.route.snapshot.params[this.id];
+    this.loadStudentById();
+    this.loadLocation();
+
+  }
+
+
 
   loadStudentById() {
     this.id = this.route.snapshot.params['id'];
@@ -47,6 +56,21 @@ export class UpdateStudent implements OnInit {
       error: (err) => console.error("Update failed", err)
     });
   }
+  loadLocation() {
+    this.locationService.getAllLocation().subscribe({
+      next: (loc) => {
+        this.locations = loc;
+        this.cdr.markForCheck();
+      },
+      error: (err) => {
+        console.error(err);
+      }
+    });
+  }
+  compareLocation(l1: Location, l2: Location) {
+    return l1 && l2 ? l1.id == l2.id : l1 === l2;
 
-  
+  }
+
+
 }

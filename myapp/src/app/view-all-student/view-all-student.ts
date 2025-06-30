@@ -16,7 +16,8 @@ export class ViewAllStudent implements OnInit {
   students: Student[] = [];
   locations: Location[] = [];
 
-  constructor(private studentService: StudentService,
+  constructor(
+    private studentService: StudentService,
     private router: Router,
     private cdr: ChangeDetectorRef,
     private locationService: LocationService
@@ -35,6 +36,7 @@ export class ViewAllStudent implements OnInit {
       next: ({ locations, students }) => {
         this.locations = locations;
         this.students = students;
+        this.cdr.markForCheck();
       },
       error: (err) => {
         console.error(err);
@@ -57,7 +59,7 @@ export class ViewAllStudent implements OnInit {
       next: (res) => {
         console.log(res);
         this.loadData();
-        this.cdr.reattach();
+        this.cdr.markForCheck();
 
       },
       error: (err) => {
