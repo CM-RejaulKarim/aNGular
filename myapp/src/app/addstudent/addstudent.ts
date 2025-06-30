@@ -4,6 +4,8 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Student } from '../../model/student.model';
 import { error } from 'console';
+import { Location } from '../../model/location.model';
+import { LocationService } from '../service/location.service';
 
 @Component({
   selector: 'app-addstudent',
@@ -13,12 +15,14 @@ import { error } from 'console';
 })
 export class Addstudent implements OnInit {
 
+  locations: Location[] = [];
   formGroup !: FormGroup;
 
   constructor(
     private studentService: StudentService,
     private formBuilder: FormBuilder,
-    private router: Router
+    private router: Router,
+    private locationService: LocationService
   ) { }
 
   ngOnInit(): void {
@@ -26,10 +30,36 @@ export class Addstudent implements OnInit {
     this.formGroup = this.formBuilder.group({
       name: [''],
       email: [''],
-      fee: ['']
+      fee: [''],
+      location: this.formBuilder.group({
+        name: [''],
+        city: [''],
+        photo: ['']
+      })
+
+    });
+    this.loadLocation();
+
+    this.formGroup.get('location')?.get('city')?.valueChanges.subscribe(city => {
+      const selectdeLocation = this.locations.find(loc => loc.city === city);
+      if (selectdeLocation) {
+
+      }
 
     });
 
+
+  }
+  loadLocation(): void {
+    this.locationService.getAllLocation().subscribe({
+
+      next: (res) => {
+        this.locations = res;
+      },
+      error: (err) => {
+        console.log(err);
+      }
+    });
   }
 
   addStudent(): void {
@@ -39,6 +69,7 @@ export class Addstudent implements OnInit {
       next: (res) => {
 
         console.log("Student Saved", res);
+        // this.loadLocation();
         this.formGroup.reset();
         this.router.navigate(['/allstu']);
 

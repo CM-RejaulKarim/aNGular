@@ -8,7 +8,7 @@ import { Location } from '../../model/location.model';
 })
 export class LocationService {
 
-  baseurl: string = "http://localhost:3000/location";
+  baseurl: string = "http://localhost:3000/locations";
 
   constructor(private http: HttpClient) { }
 

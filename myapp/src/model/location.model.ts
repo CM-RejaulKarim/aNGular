@@ -1,5 +1,5 @@
 export class Location {
-    id !: number;
+    id !: string;
     name !: string;
     city !: string;
     photo !: string;

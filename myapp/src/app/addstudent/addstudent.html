@@ -20,6 +20,15 @@
                     <label class="form-label">Fee</label>
                     <input type="number" class="form-control" id="fee" formControlName="fee">
                 </div>
+                
+                <div class="col-md-5 offset-3 mt-3" formGroupName="location">
+                <div class="invalid-feedback">Please select a location.</div>
+                <label for="location" class="form-label">Location:</label>
+                <select id="location" formControlName="city" class="form-select" required>
+                    <option *ngFor="let loc of locations" [ngValue]="loc.city">{{loc.city}}</option>
+                </select>
+
+            </div>
 
                 <div class="row">
                     <div class="col-md-3 offset-3">

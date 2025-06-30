@@ -27,16 +27,16 @@ export class ViewAllStudent implements OnInit {
     this.loadData();
   }
   loadData(): void {
-    
+
     forkJoin({
       locations: this.locationService.getAllLocation(),
       students: this.studentService.getAllStudent()
     }).subscribe({
-      next:({locations,students}) =>{
-        this.locations =locations;
+      next: ({ locations, students }) => {
+        this.locations = locations;
         this.students = students;
       },
-      error:(err) => {
+      error: (err) => {
         console.error(err);
       }
     })
