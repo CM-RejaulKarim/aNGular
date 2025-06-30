@@ -1,4 +1,5 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { Location } from '../../src/model/location.model';
 import { LocationService } from '../../src/app/service/location.service';
 import { ActivatedRoute, Router } from '@angular/router';
 

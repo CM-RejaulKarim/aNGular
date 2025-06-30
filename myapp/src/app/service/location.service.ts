@@ -1,13 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Location } from '../../model/location.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LocationService {
 
-  baseurl: string = "http://localhost:3000/locations";
+  baseurl: string = "http://localhost:3000/location";
 
   constructor(private http: HttpClient) { }
 
@@ -16,9 +17,9 @@ export class LocationService {
     return this.http.get(this.baseurl);
   }
 
-  saveLocation(location: Location): Observable<any> {
+  saveLocation(l: Location): Observable<any> {
 
-    return this.http.post(this.baseurl, location);
+    return this.http.post(this.baseurl, l);
   }
 
 
