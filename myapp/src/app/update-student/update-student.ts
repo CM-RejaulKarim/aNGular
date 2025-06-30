@@ -26,7 +26,7 @@ export class UpdateStudent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.id = this.route.snapshot.params[this.id];
+    this.id = this.route.snapshot.params['id'];
     this.loadStudentById();
     this.loadLocation();
 
@@ -34,7 +34,7 @@ export class UpdateStudent implements OnInit {
 
 
 
-  loadStudentById() {
+  loadStudentById():void {
     this.id = this.route.snapshot.params['id'];
 
     this.studentService.getStudentById(this.id).subscribe({
@@ -56,7 +56,7 @@ export class UpdateStudent implements OnInit {
       error: (err) => console.error("Update failed", err)
     });
   }
-  loadLocation() {
+  loadLocation(): void {
     this.locationService.getAllLocation().subscribe({
       next: (loc) => {
         this.locations = loc;
@@ -67,8 +67,8 @@ export class UpdateStudent implements OnInit {
       }
     });
   }
-  compareLocation(l1: Location, l2: Location) {
-    return l1 && l2 ? l1.id == l2.id : l1 === l2;
+  compareLocation(l1: Location, l2: Location):boolean {
+    return l1 && l2 ? l1.id === l2.id : l1 === l2;
 
   }
 
