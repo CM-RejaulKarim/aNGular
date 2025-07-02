@@ -143,6 +143,14 @@
       "password": "12345",
       "photo": "zzzzz",
       "role": "user"
+    },
+    {
+      "id": "4601",
+      "name": "Atik",
+      "email": "atik@gmail.com",
+      "password": "54321",
+      "photo": "yyyyy",
+      "role": "user"
     }
   ]
 }
