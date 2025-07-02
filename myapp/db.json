@@ -1,18 +1,6 @@
 {
   "students": [
     {
-      "id": "e90e",
-      "name": "C.M. REJAUL KARIM",
-      "email": "cmrejaulkarim@gmail.com",
-      "fee": 450000,
-      "location": {
-        "id": "0",
-        "name": "Acme Fresh Start Housing",
-        "city": "Chicago",
-        "photo": "https://angular.dev/assets/images/tutorials/common/bernard-hermant-CLKGGwIBTaY-unsplash.jpg"
-      }
-    },
-    {
       "id": "ee82",
       "name": "Rakib Islam",
       "email": "rakib@gmail.com",
@@ -34,30 +22,6 @@
         "name": "Cape Town",
         "city": "Cape Town",
         "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Aerial_View_of_Sea_Point%2C_Cape_Town_South_Africa.jpg/1200px-Aerial_View_of_Sea_Point%2C_Cape_Town_South_Africa.jpg"
-      }
-    },
-    {
-      "id": "7ca3",
-      "name": "Rahmat ullah",
-      "email": "rahmat@gmail.com",
-      "fee": 30000,
-      "location": {
-        "id": "0",
-        "name": "Acme Fresh Start Housing",
-        "city": "Chicago",
-        "photo": "https://angular.dev/assets/images/tutorials/common/bernard-hermant-CLKGGwIBTaY-unsplash.jpg"
-      }
-    },
-    {
-      "id": "3c63",
-      "name": "Imran Mia",
-      "email": "imran@gmail.com",
-      "fee": 25000,
-      "location": {
-        "id": "9",
-        "name": "Capital Safe Towns",
-        "city": "Portland",
-        "photo": "https://angular.dev/assets/images/tutorials/common/webaliser-_TPTXZd9mOo-unsplash.jpg"
       }
     },
     {
@@ -85,60 +49,15 @@
       }
     },
     {
-      "id": "5f5b",
+      "id": "218f",
       "name": "Imran",
-      "email": "imran@gmail.com",
-      "fee": 23464,
+      "email": "imran@gm.c",
+      "fee": 576,
       "location": {
-        "id": "9",
-        "name": "Capital Safe Towns",
-        "city": "Portland",
-        "photo": "https://angular.dev/assets/images/tutorials/common/webaliser-_TPTXZd9mOo-unsplash.jpg"
-      }
-    },
-    {
-      "id": "4b49",
-      "name": "khfhagsd",
-      "email": "sadi@gmail.com",
-      "fee": 5647655,
-      "location": {
-        "name": "",
-        "city": "Dhaka",
-        "photo": ""
-      }
-    },
-    {
-      "id": "2a8e",
-      "name": "trtjd",
-      "email": "erhrdth",
-      "fee": 324654,
-      "location": {
-        "name": "",
+        "id": "5",
+        "name": "Hopeful Apartment Group",
         "city": "Oakland",
-        "photo": ""
-      }
-    },
-    {
-      "id": "7a66",
-      "name": "a.Rahim",
-      "email": "ar@gm.c",
-      "fee": 200,
-      "location": {
-        "id": "9",
-        "name": "Capital Safe Towns",
-        "city": "Portland",
-        "photo": "https://angular.dev/assets/images/tutorials/common/webaliser-_TPTXZd9mOo-unsplash.jpg"
-      }
-    },
-    {
-      "id": "44c2",
-      "name": "fdhd",
-      "email": "45dfgd",
-      "fee": 43657,
-      "location": {
-        "name": "",
-        "city": "Gary",
-        "photo": ""
+        "photo": "https://angular.dev/assets/images/tutorials/common/r-architecture-JvQ0Q5IkeMM-unsplash.jpg"
       }
     }
   ],

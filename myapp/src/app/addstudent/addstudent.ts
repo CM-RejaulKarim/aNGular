@@ -32,6 +32,7 @@ export class Addstudent implements OnInit {
       email: [''],
       fee: [''],
       location: this.formBuilder.group({
+        id : [''],
         name: [''],
         city: [''],
         photo: ['']
@@ -43,6 +44,14 @@ export class Addstudent implements OnInit {
     this.formGroup.get('location')?.get('city')?.valueChanges.subscribe(city => {
       const selectdeLocation = this.locations.find(loc => loc.city === city);
       if (selectdeLocation) {
+
+        this.formGroup.patchValue({
+          location: {
+            id: selectdeLocation.id,   // Make sure your form has this control!
+            name: selectdeLocation.name,
+            photo: selectdeLocation.photo
+          }
+        });
 
       }
 
