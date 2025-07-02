@@ -12,6 +12,9 @@ import { ViewAllLocations } from '../../location/view-all-locations/view-all-loc
 import { UpdateStudent } from './update-student/update-student';
 import { Addlocation } from '../../location/addlocation/addlocation';
 import { UpdateLocation } from '../../location/update-location/update-location';
+import { Login } from './auth/login/login';
+import { Registration } from './auth/registration/registration';
+import { Userprofile } from './auth/userprofile/userprofile';
 
 
 @NgModule({
@@ -23,7 +26,10 @@ import { UpdateLocation } from '../../location/update-location/update-location';
     ViewAllLocations,
     UpdateStudent,
     Addlocation,
-    UpdateLocation
+    UpdateLocation,
+    Login,
+    Registration,
+    Userprofile
   ],
   imports: [
     BrowserModule,

@@ -25,26 +25,25 @@ export class Addstudent implements OnInit {
     private locationService: LocationService
   ) { }
 
-    ngOnInit(): void {
+  ngOnInit(): void {
 
     this.formGroup = this.formBuilder.group({
       name: [''],
       email: [''],
       fee: [''],
       location: this.formBuilder.group({
-        id : [''],
+        id: [''],
         name: [''],
         city: [''],
         photo: ['']
       })
-
     });
     this.loadLocation();
 
     this.formGroup.get('location')?.get('city')?.valueChanges.subscribe(city => {
       const selectdeLocation = this.locations.find(loc => loc.city === city);
-      if (selectdeLocation) {
 
+      if (selectdeLocation) {
         this.formGroup.patchValue({
           location: {
             id: selectdeLocation.id,   // Make sure your form has this control!
@@ -52,13 +51,10 @@ export class Addstudent implements OnInit {
             photo: selectdeLocation.photo
           }
         });
-
       }
-
     });
-
-
   }
+
   loadLocation(): void {
     this.locationService.getAllLocation().subscribe({
 
@@ -76,21 +72,14 @@ export class Addstudent implements OnInit {
     this.studentService.saveStudent(student).subscribe({
 
       next: (res) => {
-
         console.log("Student Saved", res);
         // this.loadLocation();
         this.formGroup.reset();
         this.router.navigate(['/allstu']);
-
       },
       error: (error) => {
-
         console.log(error);
-
       }
-
     })
-
   }
-
 }

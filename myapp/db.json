@@ -1,26 +1,14 @@
 {
   "students": [
     {
-      "id": "e90e",
-      "name": "C.M. REJAUL KARIM",
-      "email": "cmrejaulkarim@gmail.com",
-      "fee": 450000,
-      "location": {
-        "id": "0sgs",
-        "name": "Acme Fresh Start Housing",
-        "city": "Chicago",
-        "photo": "https://angular.dev/assets/images/tutorials/common/bernard-hermant-CLKGGwIBTaY-unsplash.jpg"
-      }
-    },
-    {
       "id": "ee82",
       "name": "Rakib Islam",
       "email": "rakib@gmail.com",
       "fee": 300000,
       "location": {
         "id": "1sdg",
-        "name": "A113 Transitional Housing",
-        "city": "Santa Monica",
+        "name": "A113 Transitional Housing,Santa Monica",
+        "city": "Eastern Europe",
         "photo": "https://angular.dev/assets/images/tutorials/common/brandon-griggs-wR11KBaB86U-unsplash.jpg"
       }
     },
@@ -31,7 +19,7 @@
       "fee": 35000,
       "location": {
         "id": "1fdf0",
-        "name": "Cape Town",
+        "name": "Coastal Apartment",
         "city": "Cape Town",
         "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Aerial_View_of_Sea_Point%2C_Cape_Town_South_Africa.jpg/1200px-Aerial_View_of_Sea_Point%2C_Cape_Town_South_Africa.jpg"
       }
@@ -61,26 +49,15 @@
       }
     },
     {
-      "id": "fb20",
-      "name": "istiaq samim",
-      "email": "istiaq@gmail.com",
-      "fee": 40000,
+      "id": "b9fe",
+      "name": "arsy",
+      "email": "ar@gm.c",
+      "fee": 400000,
       "location": {
-        "id": "6dgfd",
+        "id": "8dhgh",
         "name": "Seriously Safe Towns",
         "city": "Oakland",
-        "photo": "https://angular.dev/assets/images/tutorials/common/phil-hearing-IYfp2Ixe9nM-unsplash.jpg"
-      }
-    },
-    {
-      "id": "3612",
-      "name": "arsy",
-      "email": "arsy@gm.cm",
-      "fee": 5000,
-      "location": {
-        "name": "",
-        "city": "Portland",
-        "photo": ""
+        "photo": "https://angular.dev/assets/images/tutorials/common/saru-robert-9rP3mxf8qWI-unsplash.jpg"
       }
     }
   ],
@@ -93,20 +70,20 @@
     },
     {
       "id": "1sdg",
-      "name": "A113 Transitional Housing",
-      "city": "Santa Monica",
+      "name": "A113 Transitional Housing,Santa Monica",
+      "city": "Eastern Europe",
       "photo": "https://angular.dev/assets/images/tutorials/common/brandon-griggs-wR11KBaB86U-unsplash.jpg"
     },
     {
       "id": "2vds",
-      "name": "Warm Beds Housing Support",
-      "city": "Juneau",
+      "name": "Warm Beds Housing Support, juneau",
+      "city": "Europe",
       "photo": "https://angular.dev/assets/images/tutorials/common/i-do-nothing-but-love-lAyXdl1-Wmc-unsplash.jpg"
     },
     {
       "id": "3dg",
-      "name": "Homesteady Housing",
-      "city": "Chicago",
+      "name": "Homesteady Housing,Chicago",
+      "city": "CA",
       "photo": "https://angular.dev/assets/images/tutorials/common/ian-macdonald-W8z6aiwfi1E-unsplash.jpg"
     },
     {
@@ -117,8 +94,8 @@
     },
     {
       "id": "5sdg",
-      "name": "Hopeful Apartment Group",
-      "city": "Oakland",
+      "name": "Hopeful Apartment Group,Oakland",
+      "city": "Aus",
       "photo": "https://angular.dev/assets/images/tutorials/common/r-architecture-JvQ0Q5IkeMM-unsplash.jpg"
     },
     {
@@ -147,7 +124,7 @@
     },
     {
       "id": "1fdf0",
-      "name": "Cape Town",
+      "name": "Coastal Apartment",
       "city": "Cape Town",
       "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Aerial_View_of_Sea_Point%2C_Cape_Town_South_Africa.jpg/1200px-Aerial_View_of_Sea_Point%2C_Cape_Town_South_Africa.jpg"
     },
@@ -158,8 +135,14 @@
       "photo": "https://tinyurl.com/ufffzxyr"
     }
   ],
-  "user":[
-
-    
+  "user": [
+    {
+      "id": "2a01",
+      "name": "reja",
+      "email": "reja@gmail.com",
+      "password": "12345",
+      "photo": "zzzzz",
+      "role": "user"
+    }
   ]
 }
