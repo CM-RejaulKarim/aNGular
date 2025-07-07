@@ -142,14 +142,22 @@
       "email": "reja@gmail.com",
       "password": "12345",
       "photo": "zzzzz",
-      "role": "user"
+      "role": "admin"
     },
     {
       "id": "4601",
       "name": "Atik",
       "email": "atik@gmail.com",
-      "password": "54321",
+      "password": "12345",
       "photo": "yyyyy",
+      "role": "user"
+    },
+    {
+      "id": "ef4a",
+      "name": "C.M. REJAUL KARIM",
+      "email": "cmrejaulkarim@gmail.com",
+      "password": "12345",
+      "photo": "rrrrrrr",
       "role": "user"
     }
   ]

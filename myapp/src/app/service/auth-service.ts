@@ -134,5 +134,14 @@ export class AuthService {
     return null;
   }
 
+   isAdmin(): boolean {
+    return this.getUserRole() === 'admin';
+  }
+
+  isUser(): boolean {
+    const role = this.getUserRole();
+    return role === 'user';
+  }
+
 
 }

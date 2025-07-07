@@ -10,16 +10,28 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="home" href="#">Home</a>
         </li>
-        <li class="nav-item">
+
+         <ng-container *ngIf="userRole === 'admin' || userRole === 'user'">
+
+          <li class="nav-item">
           <a class="nav-link active" href="/addstu">Add students</a>
         </li>
-        <li class="nav-item">
+
+         </ng-container>
+
+        
+        
+
+        <ng-container *ngIf="userRole === 'admin'">
+
+          <li class="nav-item">
           <a class="nav-link active" href="/allstu">View All Student</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="/addloc">Add Location</a>
         </li>
-        <li class="nav-item dropdown">
+
+           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             View All
           </a>
@@ -33,12 +45,17 @@
           </ul>
         </li>
 
+        </ng-container>
+
+       
+
       </ul>
-      <form class="d-flex" role="search">
+      <!-- <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
         <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      </form> -->
       <button class="btn btn-outline-success"><a href="/login" style="text-decoration: none;">LogIn</a></button>
+      <button class="btn btn-outline-warning"><a href="/logout" style="text-decoration: none;">LogOut</a></button>
 
     </div>
   </div>

@@ -14,3 +14,6 @@ ng g s service/location.service =for taking service
 npm install @angular/animations = for animation
 
 ng g g guard/user = for create guard
+
+npm install @fortawesome/fontawesome-free = for fontawesome
+node_modules/@fortawesome/fontawesome-free/css/all.min.css = in json

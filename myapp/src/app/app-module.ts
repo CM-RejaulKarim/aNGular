@@ -15,6 +15,8 @@ import { UpdateLocation } from '../../location/update-location/update-location';
 import { Login } from './auth/login/login';
 import { Registration } from './auth/registration/registration';
 import { Userprofile } from './auth/userprofile/userprofile';
+import { Admin } from './component/auth/admin/admin';
+import { Logout } from './auth/logout/logout';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { Userprofile } from './auth/userprofile/userprofile';
     UpdateLocation,
     Login,
     Registration,
-    Userprofile
+    Userprofile,
+    Admin,
+    Logout
   ],
   imports: [
     BrowserModule,
