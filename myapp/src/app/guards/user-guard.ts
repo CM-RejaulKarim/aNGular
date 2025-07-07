@@ -31,4 +31,4 @@ export class userGuard implements CanActivate{
     }
     return this.router.createUrlTree(['/login']);
   }
-};
+}
