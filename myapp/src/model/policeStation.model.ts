@@ -1,4 +1,4 @@
-export class PoliceStation {
+export class PoliceStationMod {
   id?: string;
   name: string;
 

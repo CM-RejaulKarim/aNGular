@@ -40,7 +40,7 @@ this.authService.registration(user).subscribe({
   next:(res) =>{
     console.log("User Registered successFully: ", res);
     this.authService.storeToken(res.token);
-    this.router.navigate(['/']);
+    this.router.navigate(['/login']);
 
   },
   error:(err) => {

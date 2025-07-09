@@ -12,6 +12,13 @@ import { Userprofile } from './auth/userprofile/userprofile';
 import { Login } from './auth/login/login';
 import { Admin } from './component/auth/admin/admin';
 import { Logout } from './auth/logout/logout';
+import { PoliceStation } from './location/police-station/police-station';
+import { DistView } from './location/district/dist-view/dist-view';
+import { DivView } from './location/division/div-view/div-view';
+import { Conview } from './location/Country/conview/conview';
+import { DistAdd } from './location/district/dist-add/dist-add';
+import { DivAdd } from './location/division/div-add/div-add';
+import { ConAdd } from './location/Country/con-add/con-add';
 
 const routes: Routes = [
   { path: '', component: Home },
@@ -28,6 +35,13 @@ const routes: Routes = [
   { path: 'adminprofile' , component:Admin},
   { path: 'login' , component:Login},
   { path: 'logout' , component:Logout},
+  { path: 'ps' , component:PoliceStation},
+  { path: 'dist' , component:DistView},
+  { path: 'adddist' , component:DistAdd},
+  { path: 'adddiv' , component:DivAdd},
+  { path: 'div' , component:DivView},
+  { path: 'addcon' , component:ConAdd},
+  { path: 'con' , component:Conview},
 ];
 
 @NgModule({

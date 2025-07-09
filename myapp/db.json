@@ -168,5 +168,43 @@
       "photo": "rrrrrrr",
       "role": "user"
     }
+  ],
+  "country": [
+    {
+      "id": "3618",
+      "name": "Bangladesh",
+      "divisions": [
+        "2776"
+      ]
+    }
+  ],
+  "division": [
+    {
+      "id": "2776",
+      "name": "Dhaka",
+      "districts": [
+        "b77d"
+      ]
+    }
+  ],
+  "district": [
+    {
+      "id": "b77d",
+      "name": "Dhaka",
+      "policeStations": [
+        "d089",
+        "4ae4"
+      ]
+    }
+  ],
+  "policeStation": [
+    {
+      "id": "d089",
+      "name": "dhanmondi"
+    },
+    {
+      "id": "4ae4",
+      "name": "rampura"
+    }
   ]
 }
