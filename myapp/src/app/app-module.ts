@@ -17,6 +17,13 @@ import { Registration } from './auth/registration/registration';
 import { Userprofile } from './auth/userprofile/userprofile';
 import { Admin } from './component/auth/admin/admin';
 import { Logout } from './auth/logout/logout';
+import { PoliceStation } from './location/police-station/police-station';
+import { DistAdd } from './location/district/dist-add/dist-add';
+import { DistView } from './location/district/dist-view/dist-view';
+import { DivAdd } from './location/division/div-add/div-add';
+import { DivView } from './location/division/div-view/div-view';
+import { ConAdd } from './location/Country/con-add/con-add';
+import { Conview } from './location/Country/conview/conview';
 
 
 @NgModule({
@@ -33,7 +40,14 @@ import { Logout } from './auth/logout/logout';
     Registration,
     Userprofile,
     Admin,
-    Logout
+    Logout,
+    PoliceStation,
+    DistAdd,
+    DistView,
+    DivAdd,
+    DivView,
+    ConAdd,
+    Conview
   ],
   imports: [
     BrowserModule,
